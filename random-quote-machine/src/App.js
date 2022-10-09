@@ -1,8 +1,8 @@
-import './App.css';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const API = 'https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json';
 
@@ -42,7 +42,7 @@ class App extends React.Component {
 
     return (
       <div className='wrapper d-flex justify-content-center align-items-center vh-100'>
-        <div id='quote-box' className='col-md-6 col-10 p-5 rounded shadow'>
+        <div id='quote-box' className='col-md-8 col-lg-6 col-10 p-5 rounded shadow'>
           {
             quote && (
               <div>

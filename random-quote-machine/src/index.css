@@ -1,3 +1,8 @@
+* {
+  --white: #f9f8fc;
+  --balck: #0e172c;
+  --thistle: #d9d4e7;
+}
 
 body {
   margin: 0;
@@ -6,8 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --white: #f9f8fc;
-  --balck: #0e172c;
 }
 
 code {
@@ -19,19 +22,8 @@ code {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
 }
 
-.btn {
-  color: var(--black);
-  background-color: pink;
-}
-
-.btn:hover {
-  color: var(--white);
-  background-color: var(--black);
-  transition: 0.3s ease-in-out all;
-}
-
 #quote-box {
-  background-color: #d9d4e7;
+  background-color: var(--thistle);
 }
 
 #text {
@@ -41,4 +33,15 @@ code {
 #author {
   font-size: 1.2rem;
   text-align: right;
+}
+
+.btn {
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+  transition: 0.3s ease-in-out all;
+}
+
+.btn:hover {
+  color: var(--white) !important;
+  background-color: var(--balck) !important;
 }
