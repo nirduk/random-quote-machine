@@ -1,7 +1,22 @@
-* {
-  --white: #f9f8fc;
-  --balck: #0e172c;
-  --thistle: #d9d4e7;
+:root {
+  /* grey */
+  --grey-50: #fafafa;
+  --grey-100: #f4f4f5;
+  --grey-200: #e4e4e7;
+  --grey-300: #d4d4d8;
+  --grey-400: #a1a1aa;
+  --grey-500: #71717a;
+  --grey-600: #52525b;
+  --grey-700: #3f3f46;
+  --grey-800: #27272a;
+  --grey-900: #18181b;
+  /* basic */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
 }
 
 body {
@@ -11,6 +26,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--grey-300);
 }
 
 code {
@@ -22,12 +38,16 @@ code {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
 }
 
+.wrapper {
+  background-color: var(--grey-900);
+}
+
 #quote-box {
-  background-color: var(--thistle);
+  background-color: var(--grey-300);
 }
 
 #text {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 #author {
@@ -35,13 +55,21 @@ code {
   text-align: right;
 }
 
-.btn {
-  color: var(--black) !important;
-  background-color: var(--white) !important;
+
+#tweet-quote,
+#new-quote {
+  color: var(--grey-300);
+  background-color: var(--grey-900);
+  padding: 10px 14px;
   transition: 0.3s ease-in-out all;
 }
 
-.btn:hover {
-  color: var(--white) !important;
-  background-color: var(--balck) !important;
+#tweet-quote:hover,
+#new-quote:hover {
+  color: var(--grey-300);
+  background-color: var(--grey-700);
+}
+
+.fa-solid {
+  margin-right: 10px;
 }

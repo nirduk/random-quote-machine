@@ -70,7 +70,7 @@ class App extends React.Component {
               className='btn shadow'
               onClick={this.getRandomIndex}
             >
-              New quote
+              <i class="fa-solid fa-arrow-rotate-right"></i>Another quote
             </button>
           </div>
         </div>
