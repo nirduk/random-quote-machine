@@ -54,7 +54,7 @@ class App extends React.Component {
             )
           }
 
-          <div className='d-flex justify-content-between mt-3'>
+          <div className='d-flex justify-content-between mt-4'>
             <a id='tweet-quote'
               href={`https://twitter.com/intent/tweet?text="${quote.quote}" - ${quote.author}`}
               title='tweet this quote'
@@ -70,9 +70,20 @@ class App extends React.Component {
               className='btn shadow'
               onClick={this.getRandomIndex}
             >
-              <i class="fa-solid fa-arrow-rotate-right"></i>Another quote
+              <i className="fa-solid fa-arrow-rotate-right"></i>Another quote
             </button>
           </div>
+        </div>
+        <div className="footer">
+          by{" "}
+          <a href="https://github.com/nirduk" target="_blank" rel="noreferrer">
+            <span className="f1">K</span>
+            <span className="f2">u</span>
+            <span className="f3">d</span>
+            <span className="f4">r</span>
+            <span className="f5">i</span>
+            <span className="f6">n</span>
+          </a>
         </div>
       </div>
     );

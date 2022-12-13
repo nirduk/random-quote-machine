@@ -70,6 +70,41 @@ code {
   background-color: var(--grey-700);
 }
 
-.fa-solid {
+#new-quote:hover i {
+  transition: 0.4s ease-in-out;
+}
+
+#new-quote:hover i {
+  transform: rotate(360deg);
+}
+
+#new-quote i {
   margin-right: 10px;
+}
+
+.footer {
+  position: absolute;
+  color: var(--grey-300);
+  bottom: 30px;
+}
+
+.footer a {
+  color: var(--grey-300);
+  text-decoration: none;
+}
+
+.footer span {
+  display: inline-block;
+  margin-left: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer a:hover :nth-child(even) {
+  transform: rotate(15deg);
+  color: var(--red-dark);
+}
+
+.footer a:hover :nth-child(odd) {
+  transform: rotate(-15deg);
+  color: var(--red-dark);
 }
